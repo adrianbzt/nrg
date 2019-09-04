@@ -25,7 +25,8 @@ class ContactController extends AbstractController
     {
 
         return $this->render('base.html.twig', [
-            'context' => $request->headers->get('User-Agent')
+            'context' => $request->headers->get('User-Agent'),
+            'ceva' => 'masina de spalat a lui Tanase'
         ]);
     }
 }
